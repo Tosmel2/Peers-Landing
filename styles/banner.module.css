@@ -1,0 +1,299 @@
+.navv {
+  height: 100px;
+  position: sticky !important;
+  top: 0px;
+}
+
+.main {
+  background: #020279;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  height: 480px;
+}
+
+.maincontainer {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.textarea {
+  width: 400px;
+  padding-top: 2.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+}
+.imagearea {
+  width: 550px;
+}
+.imagearea1 {
+  border-bottom-right-radius: 50% 18%;
+  border-bottom-left-radius: 50% 5%;
+  margin-top: -70px !important;
+  margin-left: 50px !important;
+}
+
+.floatingcards {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  bottom: 480px;
+  padding-right: 200px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item4";
+}
+.item1 {
+  grid-area: item1;
+}
+
+#item1 {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  background: #cacaf1;
+  box-shadow: 0px 8px 40px rgba(210, 77, 101, 0.26);
+  border-radius: 14px;
+  margin-left: 450px;
+}
+.item2 {
+  grid-area: item2;
+}
+#item2 {
+  width: 160px;
+  height: 50px;
+  display: inline-flex;
+  gap: 16px;
+  font-size: 12px;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+.item3 {
+  grid-area: item3;
+}
+#item3 {
+  width: 250px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: inline-flex;
+  gap: 12px;
+  padding-left: 0.5em;
+  margin-left: 330px;
+  padding-top: 1.8em;
+}
+.item4 {
+  grid-area: item4;
+}
+#item4 {
+  width: 200px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: inline-flex;
+  gap: 12px;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-top: 1.5em;
+}
+.button-container {
+  height: 4em;
+  display: -webkit-b;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  gap: 20px;
+}
+.button {
+  font-weight: 300;
+  border-radius: 10px;
+}
+.playbutton {
+  background: white;
+  color: #000;
+  border-radius: 100%;
+  padding-top: 0.8em;
+  width: 4em;
+}
+.Resume {
+  background-color: #f48c06 !important;
+  color: white;
+  border: 1px solid #f48c06;
+  width: 140px;
+  font-size: 1.2em;
+  padding-top: 1em;
+  border-radius: 25px;
+}
+.Resume:hover {
+  background-color: #cacaf1 !important;
+  color: white;
+  border: 1px solid #cacaf1;
+  -webkit-transition-delay: 125ms;
+  transition-delay: 125ms;
+}
+
+.Hire {
+  padding-top: 1.2em;
+  font-size: 1em;
+  background-color: transparent !important;
+  color: white;
+  width: 140px;
+}
+.Hire:hover {
+  background-color: #f48c06 !important;
+  color: white;
+  border: 1px solid #f48c06;
+  -webkit-transition-delay: 125ms;
+  transition-delay: 125ms;
+}
+
+@media only screen and (max-width: 450px) {
+  .imagearea1 {
+    margin-top: -20px !important;
+  }
+
+  .maincontainer {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .floatingcards {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
+  #item3 {
+    width: 250px;
+    height: 80px;
+    gap: 12px;
+    font-size: 16px;
+    padding-left: 0.5em;
+    padding-top: 1.5em;
+  }
+  #item4 {
+    width: 200px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .imagearea1 {
+    margin-top: -20px !important;
+  }
+
+  .maincontainer {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .floatingcards {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .imagearea1 {
+    margin-top: -20px !important;
+  }
+
+  .maincontainer {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  #item1 {
+    align-items: flex-end;
+  }
+
+  #item3 {
+    margin-left: 250px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    height: 876px;
+  }
+  .maincontainer {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .textarea {
+    width: 415px;
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: "Poppins";
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+  }
+  .imagearea {
+    width: 550px;
+  }
+  .imagearea1 {
+    margin-top: -18px !important;
+    border-bottom-right-radius: 50% 15%;
+    border-bottom-left-radius: 50% 25%;
+  }
+
+  #item3 {
+    margin-left: 300px;
+  }
+
+  .floatingcards {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
+}
